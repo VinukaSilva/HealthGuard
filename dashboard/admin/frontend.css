@@ -1,0 +1,13 @@
+.overview-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* This adds space between the boxes. Adjust as needed. */
+    justify-content: center; /* This centers the boxes in the container. Remove if not needed. */
+  }
+  
+.box {
+    flex: 1; /* This makes each box grow to fill the available space. You can adjust this as needed. */
+    min-width: 200px; /* This ensures that the box has a minimum width. Adjust based on your design. */
+    /* Add your existing styles here */
+  }
+  

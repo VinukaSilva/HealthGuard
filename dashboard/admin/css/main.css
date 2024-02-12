@@ -6,6 +6,16 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+.home-content {
+  padding-top: 60px; /* Default for mobile */
+}
+
+@media (min-width: 768px) {
+  .home-content {
+    padding-top: 100px; /* Adjust for desktop if the navbar is taller */
+  }
+}
+
 .sidebar{
   position: fixed;
   height: 100%;
@@ -214,6 +224,23 @@ nav .profile-details i{
   padding: 0 20px;
   margin-bottom: 49px;
 }
+
+/* Default to vertical layout */
+.overview-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Horizontal layout on screens wider than 768px */
+@media (min-width: 768px) {
+  .overview-boxes {
+    flex-direction: row; /* Switch back to horizontal layout */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    gap: 20px; /* Keep some space between the boxes */
+  }
+}
+
 .overview-boxes .box{
   display: flex;
   align-items: center;
@@ -292,6 +319,31 @@ nav .profile-details i{
   justify-content: space-between;
   /* padding: 0 20px; */
 }
+
+.sales-details {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-around !important; /* Adjust this as needed */
+  align-items: flex-start !important; /* Ensures items align at the top */
+}
+
+.sales-details ul {
+  flex: 1 1 15% !important; /* Allows each list to grow and take equal width, adjust '20%' as necessary */
+  margin: 0 10px !important; /* Adds some space between lists */
+  max-width: 20% !important; /* Limits width of each list to 20% of their container's width */
+}
+
+@media (max-width: 768px) {
+  .sales-details {
+    flex-direction: column !important;
+  }
+  .sales-details ul {
+    flex: 1 1 100% !important; /* Each list takes full width on smaller screens */
+    margin: 10px 0 !important; /* Adjust vertical margin */
+    max-width: 100% !important;
+  }
+}
+
 
 /* left box */
 .box-content .sales-boxes .recent-sales{
