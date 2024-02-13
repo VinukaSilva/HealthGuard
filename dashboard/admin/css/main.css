@@ -296,8 +296,18 @@ nav .profile-details i{
   margin: -15px 0 0 6px;
 }
 .box{
-  /* margin-top: 15px; */
+   margin-top: 15px; 
 }
+.box .right-side .indicator i {
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+.cart {
+  width: 50px; /* Adjust based on your design */
+  height: auto;
+  /* Add any additional styling needed to align the image or adjust its appearance */
+}
+
 .box-content .box .cart.two{
    color: #2BD47D;
    background: #C0F2D8;
@@ -317,7 +327,7 @@ nav .profile-details i{
 .box-content .sales-boxes{
   display: flex;
   justify-content: space-between;
-  /* padding: 0 20px; */
+  padding: 0 20px; 
 }
 
 .sales-details {
@@ -328,9 +338,12 @@ nav .profile-details i{
 }
 
 .sales-details ul {
-  flex: 1 1 15% !important; /* Allows each list to grow and take equal width, adjust '20%' as necessary */
-  margin: 0 10px !important; /* Adds some space between lists */
-  max-width: 20% !important; /* Limits width of each list to 20% of their container's width */
+  flex: 5 5 15% !important; /* Allows each list to grow and take equal width, adjust '20%' as necessary */
+  margin: 10px 10px; /* Adds some space between lists */
+  max-width: 100% !important; /* Limits width of each list to 20% of their container's width */
+  overflow-y: auto; /* Adds a scrollbar to each list if content overflows */
+  max-height: 500px;
+  
 }
 
 @media (max-width: 768px) {
@@ -339,7 +352,7 @@ nav .profile-details i{
   }
   .sales-details ul {
     flex: 1 1 100% !important; /* Each list takes full width on smaller screens */
-    margin: 10px 0 !important; /* Adjust vertical margin */
+    margin: 5px 5 !important; /* Adjust vertical margin */
     max-width: 100% !important;
   }
 }
@@ -358,11 +371,12 @@ nav .profile-details i{
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 .sales-boxes .box .title{
   font-size: 24px;
   font-weight: 500;
-  /* margin-bottom: 10px; */
+  margin-top: 10px; 
 }
 .sales-boxes .sales-details li.topic{
   font-size: 20px;
@@ -438,7 +452,8 @@ nav .profile-details i{
 @media (max-width: 1000px) {
   .overview-boxes .box{
     width: calc(100% / 2 - 15px);
-    margin-bottom: 15px;
+    margin: 10px;
+    margin-bottom: 20px;
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -660,6 +675,7 @@ nav .profile-details i{
     flex-wrap: wrap;
     padding: 0 20px;
     margin-bottom: 26px;
+    margin-left: 20px;
   }
   .overview-boxes .box{
     display: flex;
@@ -670,6 +686,7 @@ nav .profile-details i{
     padding: 15px 14px;
     border-radius: 12px;
     box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    
   }
   .overview-boxes .box-topic{
     font-size: 20px;
@@ -1261,7 +1278,7 @@ nav .profile-details i{
   nav .sidebar-button .dashboard,
   nav .profile-details .admin_name,
   nav .profile-details i{
-    /* display: none; */
+     display: none; 
   }
   .home-section nav .profile-details{
     height: 50px;
@@ -1275,9 +1292,6 @@ nav .profile-details i{
   .overview-boxes .box{
     width: 100%;
     margin-bottom: 15px;
-  }
-  .sidebar.active ~ .home-section nav .profile-details{
-    /* display: none; */
   }
 }
 
@@ -1308,9 +1322,7 @@ nav .profile-details i{
     width: 100%;
     margin-bottom: 15px;
   }
-  .sidebar.active ~ .home-section nav .profile-details{
-    /* display: none; */
-  }
+ 
 }
 
 .bx{
