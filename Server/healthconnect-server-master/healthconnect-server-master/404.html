@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html data-wf-domain="https://hippyaki.github.io/HealthConnect/" data-wf-page="5e30f06b05f796620b1ddc26" data-wf-site="5e30f06b05f79621331ddc25> 
+<head>
+  <meta charset="utf-8"/>
+  
+  <title>Health Connect</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  
+
+
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">                     
+  <link href="https://assets.website-files.com/5e30f06b05f79621331ddc25/css/medicatemplate.webflow.d2ac5975f.css"
+    rel="stylesheet" type="text/css" />
+  <link href="https://assets.website-files.com/5e30f06b05f79621331ddc25/5e3b73da7535d74e3c7bdccf_medica.png"
+    rel="shortcut icon" type="image/x-icon" />
+  <link href="https://assets.website-files.com/5e30f06b05f79621331ddc25/5e3b73e0e2dafae7b5c75931_medica.png"
+    rel="apple-touch-icon" />
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>			  
+	
+  <style>
+
+
+/* ------------- FONT ------------------------*/
+			  
+
+/*//////////////////////////////////////////////////////////////////
+[ RESTYLE TAG ]*/
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: Poppins-Regular, sans-serif;
+    width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: #0a2558;  
+}
+
+/*---------------------------------------------*/
+a {
+	font-family: Poppins-Regular;
+	font-size: 20px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}https://fonts.googleapis.com/css?family=Poppins
+
+a:hover {
+	text-decoration: none;
+  color: #6a7dfe;
+  color: -webkit-linear-gradient(left, #21d4fd, #b721ff);
+  color: -o-linear-gradient(left, #21d4fd, #b721ff);
+  color: -moz-linear-gradient(left, #21d4fd, #b721ff);
+  color: linear-gradient(left, #21d4fd, #b721ff);
+}
+
+/*---------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+	    
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+#error-page{
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  right: 15%;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#error-page .content{
+  max-width: 600px;
+  text-align: center;
+}
+.content h2.header{
+  font-size: 18vw;
+  line-height: 1em;
+  position: relative;
+}
+.content h2.header:after{
+  position: absolute;
+  content: attr(data-text);
+  top: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.25);
+  animation: animate 10s ease-in-out infinite;
+}
+@keyframes animate {
+  0%{
+    background-position: 0 0;
+  }
+  25%{
+    background-position: 100% 0;
+  }
+  50%{
+    background-position: 100% 100%;
+  }
+  75%{
+    background-position: 0% 100%;
+  }
+  100%{
+    background-position: 0% 0%;
+  }
+}
+.content h4{
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 2em;
+  max-width: 600px;
+  position: relative;
+}
+.content h4:after{
+  position: absolute;
+  content: attr(data-text);
+  top: 0;
+  left: 0;
+  right: 0;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content p{
+  font-size: 1.2em;
+  color: #0d0d0d;
+}
+.content .btns{
+  margin: 25px 0;
+  display: inline-flex;
+}
+.content .btns a{
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  border: 2px solid #69a6ce;
+  color: #69a6ce;
+  font-weight: 500;
+  font-family: Poppins;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+.content .btns a:hover{
+  background: #69a6ce;
+  color: #fff;
+}
+  </style>
+</head>
+<body>
+	
+    <div id="error-page">
+         <div class="content">
+            <h2 class="header" data-text="404">
+               404
+            </h2>
+            <h4 data-text="Oops! Page not found">
+               Oops! Page not found
+            </h4>
+         
+            <div class="btns">
+               <a href="https://hippyaki.github.io/HealthConnect/">Return Home</a>
+            </div>
+         </div>
+      </div>
+
+</body>
