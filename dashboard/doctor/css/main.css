@@ -300,8 +300,9 @@ nav .profile-details i{
   display: flex !important;
   flex-wrap: wrap !important;
   justify-content: space-around !important; /* Adjust this as needed */
-  align-items: flex-start !important; /* Ensures items align at the top */
+  align-items: flex-start !important; /* Ensures items align at the top 1*/
 }
+
 
 .sales-details ul {
   flex: 5 5 15% !important; /* Allows each list to grow and take equal width, adjust '20%' as necessary */
