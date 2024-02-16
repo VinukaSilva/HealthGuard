@@ -296,6 +296,32 @@ nav .profile-details i{
   justify-content: space-between;
   /* padding: 0 20px; */
 }
+.sales-details {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-around !important; /* Adjust this as needed */
+  align-items: flex-start !important; /* Ensures items align at the top */
+}
+
+.sales-details ul {
+  flex: 5 5 15% !important; /* Allows each list to grow and take equal width, adjust '20%' as necessary */
+  margin: 10px 10px; /* Adds some space between lists */
+  max-width: 100% !important; /* Limits width of each list to 20% of their container's width */
+  overflow-y: auto; /* Adds a scrollbar to each list if content overflows */
+  max-height: 500px;
+  
+}
+
+@media (max-width: 768px) {
+  .sales-details {
+    flex-direction: column !important;
+  }
+  .sales-details ul {
+    flex: 1 1 100% !important; /* Each list takes full width on smaller screens */
+    margin: 5px 5 !important; /* Adjust vertical margin */
+    max-width: 100% !important;
+  }
+}
 
 /* left box */
 .box-content .sales-boxes .recent-sales{
